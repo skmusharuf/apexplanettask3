@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Styling and JavaScript</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Advanced Styling & JavaScript Project</h1>
+</header>
+
+<div class="container">
+
+  <!-- CAROUSEL -->
+  <div class="box">
+    <h2>Image Carousel</h2>
+    <img id="slider" src="https://picsum.photos/200?1"><br>
+    <button onclick="prevImage()">Prev</button>
+    <button onclick="nextImage()">Next</button>
+  </div>
+
+  <!-- WEATHER API -->
+  <div class="box">
+    <h2>Weather</h2>
+
+    <input type="text" id="city" placeholder="Enter city">
+    <button onclick="getWeather()">Get Weather</button>
+
+    <p id="weather"></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

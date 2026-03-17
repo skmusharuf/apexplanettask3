@@ -1,0 +1,71 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background: teal;
+  color: white;
+  padding: 15px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Boxes */
+.box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 40%;
+}
+
+/* Image */
+img {
+  width: 200px;
+}
+
+/* Buttons */
+button {
+  padding: 8px;
+  margin: 5px;
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Input */
+input {
+  padding: 8px;
+  margin: 5px;
+}
+
+/* ===== Laptop (default) ===== */
+/* No change needed since default layout works for large screens */
+
+/* ===== Tablet ===== */
+@media (max-width: 900px) {
+  .box {
+    width: 45%;
+  }
+}
+
+/* ===== Phone ===== */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+}
